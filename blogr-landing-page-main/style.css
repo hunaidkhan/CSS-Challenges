@@ -1,0 +1,301 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*, *::before, *::after{
+    margin: 0;
+}
+
+body{
+    position: relative;
+}
+
+/* Navbar styling */
+
+.navbar{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+/* .fixed{
+    position: fixed;
+    background-image: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    margin-top: 0;
+    justify-content: space-around;
+} */
+
+.container-left{
+    display: flex;
+    
+}
+
+.container-left > .nav-elements{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    /* border: 1px solid black; */
+}
+
+.nav-elements > svg {
+    margin-left: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-right{
+    display: flex;
+ 
+}
+
+.container-right > *{
+    margin: 1rem;
+}
+
+.logo{
+    margin-right: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button{
+    background: transparent;
+    color: white;
+}
+
+.signup-button{
+    padding: 1rem 3rem;
+    color: hsl(356, 100%, 66%);
+
+}
+/* Header styling */
+
+.header-container{
+    overflow: hidden;
+    background-image: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    border-bottom-left-radius: 80px;
+}
+
+.header-svg{
+    position: relative;
+}
+
+.header-svg > svg {
+    margin-left: 15rem;
+    margin-bottom: 8rem;
+    transform: scale(0.7);
+}
+
+.header-wrapper{
+    position: absolute;
+    /* margin: 4rem 0 2rem 0; */
+    background: transparent;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    color: white;
+    z-index: 100;
+    margin-top: 4rem;
+}
+
+.header-wrapper > h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.header-wrapper > p{
+    padding: 0.6rem 0;
+}
+
+.button-container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    border-radius: 55px;
+    padding: 1em 1em;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
+.style-button-filled{
+    color: hsl(356, 100%, 66%);
+}
+
+.style-button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.header-button + .header-button{
+    margin-left: 1em;
+}
+
+/* Section1 styling */
+
+.section1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    overflow: hidden;
+}
+
+.section1-wrapper{
+   display: flex;
+   padding-left: 8rem;
+}
+
+.heading{
+    font-family: 'Overpass', sans-serif;
+    color: hsl(208, 49%, 24%);
+}
+
+.section1-container > h1 {
+    padding: 5rem 10rem;
+}
+
+.image-container {
+    margin-right: -19rem;
+    margin-top: -15rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-container > svg{
+    transform: scale(0.7);
+}
+
+
+.text-container{
+
+}
+
+.para{
+    font-family: 'Overpass', sans-serif;
+    color: hsl(208, 49%, 24%);
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.second-heading{
+    margin-top: 2rem;
+}
+
+/* Second section styling */
+
+.section2-container{
+    background-image: linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    position: relative;
+    width: 100%;
+    padding: 8rem 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+   overflow: hidden;
+}
+
+.section2-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 200;
+    overflow: visible;
+}
+
+.circles-svg{
+    z-index: 1;
+    position: absolute;
+    top: -30rem;
+    left: -15rem;
+    
+}
+
+.img-container{
+    z-index: 200;
+    position: relative;
+   
+}
+
+.img-container > svg{
+    position: absolute;
+    top: -30rem;
+    left: 0;
+    overflow: visible;
+}
+
+.text-container{
+    z-index: 200;
+    max-width: 500px;
+
+}
+
+.sec2-text{
+    color: white;
+}
+
+.img-container-1 > svg{
+    display: none;
+}
+
+
+
+
+
+/* Section 3 styling */
+
+
+.section3-container{
+    margin: 15rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.svg-container > svg{
+    transform: scale(0.7);
+}
+
+.svg-container{
+    margin-left: -20rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    width: 60%;
+}
+
+.text3-container {
+    max-width: 600px;
+}
