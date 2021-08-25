@@ -1,0 +1,139 @@
+*, *::before, *::after{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h4{
+    color: hsl(223, 47%, 23%);
+}
+
+h1{
+    font-weight: 900;
+}
+
+h4{
+    font-weight: 900;
+}
+
+.bg-container{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.card-container{
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 40px 40px 2px rgba(0, 0, 0, 0.068);
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.3rem 0;
+    text-align: center;
+}
+
+.text-container > *{
+    margin-top: 1rem;
+}
+
+.order-desc{
+    color: hsl(224, 23%, 55%);
+    max-width: 70%;
+}
+
+.plan-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding: 1.4rem 2rem;
+    margin: 1rem 1rem;
+}
+
+.plan-element + .plan-element{
+    margin-left: 4rem;
+}
+
+.price{
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-link{
+    font-weight: 700;
+    
+}
+
+.plan-link:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.wrapper{
+    display: flex;
+}
+
+.price-container{
+    margin-left: 1rem;
+}
+
+.cta{
+    text-decoration: none;
+    border: none;
+    padding: 0.8rem 7rem;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: 700;
+    margin: 0 2rem;
+    margin-top: 1rem;
+}
+
+
+
+.payment-proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 20px 50px 4px rgba(0, 0, 0, 0.144);
+    transition: box-shadow 0.2s ease-in;
+}
+
+.payment-proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+    box-shadow: 0 20px 50px 6px rgba(0, 0, 0, 0.219);
+}
+
+.cancel-order:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    .bg-container{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .card-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-container{
+        width: min-content;
+    }
+}
